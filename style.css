@@ -1,0 +1,157 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Horisontal scrol disable*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-right: 10px;
+}
+
+@media (width < 600px){
+    h1{
+        font-size: 40px;
+    }
+
+    main, .form{
+        width: 100%;
+    }
+
+
+}
+
+header img{
+    height: 60px;
+}
+
+main, .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+main{
+    height: 120px;
+    transition: 0.3s ease;
+    /*background-color: #3a7ed2;*/
+}
+
+
+main.active{
+    height: 370px;
+}
+
+
+textarea{
+    min-height: 4rem;
+    height: auto;
+    columns: 50;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #777;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.field{
+    padding-top: 5px;
+    position: relative;
+}
+
+.field i{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media (width < 600px){
+    .field i{
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+}
+
+button{
+    height: 2rem;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #777;
+    background: #3a7ed2;
+    color: white;
+    padding: 0.2rem;
+    width: 300px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+button:hover{
+    border: 1px solid white;
+    color: rgb(198, 197, 197);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.image{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.active .image{
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.image button{
+    margin-top: 20px;
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 15px;
+    color: #777;
+}
+
+.media .fa, .fa-solid{
+    color: #3a7ed2;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
