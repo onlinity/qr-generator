@@ -49,15 +49,20 @@ main, .form{
     padding: 15px;
 }
 
+@media (width < 500px){
+    main, .form{
+        width: 90%;
+    }
+}
+
 main{
-    height: 120px;
+    height: 300px;
     transition: 0.3s ease;
-    /*background-color: #3a7ed2;*/
 }
 
 
 main.active{
-    height: 370px;
+    height: fit-content;
 }
 
 
@@ -91,6 +96,67 @@ textarea{
         right: 10px;
     }
 }
+
+
+#add, #readFile{
+    background-color: white;
+    color: #3a7ed2;
+    margin-bottom: 15px;
+}
+
+
+.div{
+    height: 0;
+    display: none;
+}
+
+
+.div.opened{
+    height: fit-content;
+    opacity: 1;
+    margin: 15px;
+    display: block;
+}
+
+.div div{
+    margin: 10px;
+}
+
+.div label{
+    margin-left: 5px;
+}
+
+.div input{
+    background: none;
+    border: none;
+}
+
+#margin{
+    margin-left: 10px;
+    width: 50px;
+}
+
+#file{
+    background: transparent;
+    color: #3a7ed2;
+}
+
+#readFilediv label{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#readFilediv{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+#submit.closed{
+    display: none;
+}
+
 
 button{
     height: 2rem;
@@ -133,6 +199,7 @@ footer{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    position: relative;
 }
 
 footer h4{

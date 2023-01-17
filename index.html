@@ -27,6 +27,41 @@
                 <textarea name="input" id="input" cols="15" placeholder="Enter text"></textarea>
                 <i class="fa-solid fa-xmark" id="delete"></i>
             </div>
+            <button id="add">Additional options</button>
+            <div id="options" class="div">
+                <div>
+                    <input type="color" id="color">
+                    <label for="color">Color</label>
+                </div>
+                <div>
+                    <input type="color" id="bgcolor">
+                    <label for="bgcolor">Background color</label>
+                </div>
+                <div>
+                    <label for="margin">Margin: </label>
+                    <input type="number" id="margin">
+                </div>
+                <div>
+                    <label for="">Format:</label>
+                    <div>
+                        <input type="checkbox" id="f1">
+                        <label for="f1">.jpg</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="f2">
+                        <label for="f2">.png</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="f3">
+                        <label for="f3">.svg</label>
+                    </div>
+                </div>
+            </div>
+            <button id="readFile">Upload text file</button>
+            <div id="readFilediv" class="div">
+                <input type="file" id="file">
+                <label for="file">*QR-code will be generated and downloaded for each line of text</label>
+            </div>
             <button type="submit" id="submit">Generate code</button>
         </div>
 
